@@ -5,21 +5,18 @@ import Image from 'react-bootstrap/Image'
 import { Container } from 'react-bootstrap';
 
 const content = [
-    "Jane M. Fearn-Zimmer is an Elder and Disability Law, Tax, and Trusts and Estates attorney.She dedicates her practice to serving clients in the areas of elder and disability law, special needs planning, asset protection, tax and estate planning and estate administration, guardianships and mental health law, including involuntary commitments.",
-
-    "Known for her dedication to helping others, Jane helps families find the best long-term care and a way to pay for that care, often using public benefits. She guides families of the elderly and disabled through the nursing home admissions process and through the maze of qualifying for public benefits programs to fund long-term care, such as Medicaid and SSI benefits. She also assists the elderly and the disabled and their loved ones in tax and estate and asset protection, as well as assisting and representing clients at Medicaid Fair hearings.",
-    "For over 17 years, Jane has helped countless families deal with disability related issues using general durable powers of attorney, health care powers of attorney, guardianships, special needs trusts, and Medicare set aside arrangements where appropriate. She also brings an exceptionally broad perspective to her work due to her strong litigation background. She was a former federal judicial clerk to the Honorable John S. Unpingo, Chief Judge of the District Court of Guam, where she served on the Civil and Criminal Justice Reform Act Committees for the District of Guam.", 
-    "Ms. Fearn-Zimmer was honored by the New Jersey Law Journal with the Top Women in the Law 2018 award for her involvement in a Medicaid Caregiver Child Exemption case that helped change the Medicaid Policy in New Jersey. The case is a significant breakthrough in the law, because since approximately 2015, the State of New Jersey frequently denied caregiver child applications on the basis of a child’s ability to work while providing care for the parent. A frequent author and lecturer, Jane speaks and writes on a variety of tax, special needs planning, Medicaid planning, guardianship and estate planning topics to a broad range of groups, including Clear Law Institute, the National Business Institute, the New Jersey State Bar Association, the Burlington County Bar Association, and the Gloucester County Legal Education Association, and more. She also served as the Editor of The Elder Law Report, Including Special Needs Planning, a national newsletter, through which she updates attorneys regarding new developments in elder law and special needs planning.",
-
-    "Jane is an active member of the New Jersey State Bar Association, the New Jersey Chapter of the National Academy of Elder Law Attorneys, and the Burlington County Bar Association and is a former Chair of the New Jersey State Bar Association Elder and Disability Law section. She is an Accredited Attorney with the U.S. Department of Veteran’s Affairs. Jane has been admitted to the New Jersey Bar since 1996, and previously practiced civil litigation in New Jersey."
- 
+    "Christina Zimmer is a software engineer. She graduated from Rowan University in May of 2023, but she started her coding journey long before that. She's done several projects, completed two internships, won a hackathon and worked as an independent contractor for some websites."
 ];
 
-const repHeader = [
-    "Ms. Fearn-Zimmer is recognized as a leader in the area of using Medicaid compliant annuities.",
-    "She filed three federal district court lawsuits against the State of New Jersey on behalf of clients who used Medicaid compliant annuities in order to allow clients to obtain Medicaid eligibility to assist in covering their long term care costs.",
-    "Each of the three cases involved the purchase of an immediate annuity pursuant to applicable Medicaid law in order to achieve Medicaid eligibility.",
-    "In each case, the State of New Jersey denied Medicaid benefits."
+const projects = [
+    "Seismic Infographic (June -August 2022): When buildings are designed they must be up to the zoning code of the region so they can survive in the event of a natural disaster whether it be hurricanes, tornadoes, earthquakes ect. I created a seismic design category color coded 3D map info graphic for the entire globe. This project required taking functions of latitude and longitude on the surface of the earth and digitizing them with contour points, minima and maxima and special area regions. Since this involves taking a 3D plane and converting it down to a 2D plane, tensor calculus was needed to understand how to transform from polar coordinates to Cartesian ones, as the purpose was to project a sphere/ ellipsoidal shape onto a flat surface. I obtained the first goal of transforming from 3D to 2D by creating functions to handle vector addition, subtraction, multiplication, and dot products to create a metric tensor. This allowed for data to be taken in as points, put into a circle buffer which generated arcs, lines, circles and points thus satisfying the representation of contour points, minima and maxima and the special area regions. Tech: JavaScript, TypeScript NodeJS, HTML.",
+    "Tokenizing and Parsing (June - August 2022): I converted excel data into usable code to compare thousands of lines of data accurately, quickly, and comfortably. To do this I created usable formulas data from excel tables. By coding inline conversion to JSON file format, I was able to export 16MB, 23MB files of excel data into JSON code in seconds. Now as this is the raw data for the outlines of the country’s shapes, they need to be passed into the metric tensor functions for visual rendering so the contour points were able to be visualized, which needed a couple steps. First, I created a file reader in JavaScript for both of my files using async functions. I used flags, error handling and chained if statements to create a tokenizer and a parser to use. I then created a function to assign my parsed, tokenized files to their own HashMap to compared for unique keys versus duplicates, written to two separate JSON files. Tech: JavaScript, JSON, Microsoft Excel, TypeScript, Node.js.",
+    "Wind Maps (May- August 2021):  I added to a visual rendering of the United States designed to calculated wind zoning codes for construction permits after acquiring a list of ACII latitude and longitudes and the zoning max wind speeds. I used data as calibrating for a projection map that accounted for contours, coastal regions and special wind zones. I overlaid both maps, created and used a program written for Newton-Rhapson to align canvas x and y coordinates to correspond with US latitude and longitude regions. I wired everything through with web sockets connected to buttons, used functional programming and a top down approach.",
+    "Adjustable Harmonic Damping Project (May- August 2021): I combined calculus, physics and JavaScript to create an adjustable animation of the harmonic oscillation of three individual springs with adjustable inputs for dampening, mass and speed. I used HTML canvas for my front-end with JavaScript as a back-end. I created a graph with the corresponding sin waves for each individual spring rendered to allow for the visualization of the time-step. Tech: HTML, CSS, WebSockets, JavaScript, Calculus + Physics, Node.js.",
+    "Capstone Project: I lead a team of four to create a fully functional website using JavaScript, HTML, CSS, MongoDB and an express server. I parsed data from a get request and pushed it to an array to be able to sort through matching data with a corresponding API key. This allowed for creation of a searchable interface to find the top 25 songs in the US by any particular artist.",
+    "Oxford Lithograph: I created a fully functioning website complete with email request specific to client’s needs using React.js. I created a serverless backend yo procedurally send emails hosted through an AWS lambda function. I also implemented a custom grid system utilizing an object map to control and style the website. This also made it automatically resize depending on the screen size.",
+    "Rutgers University Hackathon Superlative Category Winner: Pomodoro Study Timer: I lead a team of four to created a Pomodoro study timer with a functioning music library, 25 to 5 minute interval timer, useful links, navbar, footer and a goal list using HTML canvas and JavaScript. I wired through postman, hosted through heroku and node.js, gave lessons on github, node.js, JavaScript, HTML, and wore many hats while actively bringing down processing time. I encouraged the team to finish, delegated tasks after paving the way by creating and explaining easy patterns for them to follow from repetitive tasks to maximize efficiency while keeping the project moving forward. Tech: HTML, Postman, Node.js, JSON, MongoDB, CSS, JavaScript, (April 2022)"
+
 ]
 const representation = [
     "In Roccia v. Velez (U.S. Dist. Ct. D.N.J., Civ. No. 12-07346, June 6, 2013), the client was a single individual who purchased an immediate annuity for $40,000 in order to achieve Medicaid eligibility for nursing home care. In order to have some additional funds set aside to cover ancillary nursing home costs not covered by Medicaid, an immediate annuity was purchased. Pursuant to a federal court order, the client’s Medicaid application was approved.",
@@ -65,39 +62,16 @@ const template = [
 ]
 export default function AttorneyProfiles() {
     return <><Row>
-    <Col xs={12} sm={7}>
-        <h5 style={{ fontFamily: "Spectral-Regular", textAlign: "left", fontWeight: "bold", paddingLeft: "10%" }}>About Jane M. Fearn-Zimmer, Esquire</h5>
+    <Col xs={12} sm={9}>
+        <h5 style={{ fontFamily: "Spectral-Regular", textAlign: "left", fontWeight: "bold", paddingLeft: "10%" }}>About Christina Zimmer </h5>
         <p style={{ fontFamily: "Spectral-Regular", textAlign: "left", lineHeight: 2,paddingLeft: "10%" }}>{content.map(c => <><p style={{ paddingTop: 5 }}>{c}</p></>)}</p>
        
-        <h5 style={{ fontFamily: "Spectral-Regular", textAlign: "left", fontWeight: "bold",paddingLeft: "10%" }}>Representative Matters</h5>
-        <p style={{ fontFamily: "Spectral-Regular", textAlign: "left", lineHeight: 2,paddingLeft: "10%" }}>{repHeader.map(repHeader => <><p style={{ paddingTop: 5 }}>{repHeader}</p></>)}</p>
-        <ul style={{paddingLeft: "15%"}}>
-            {representation.map(representation => <li style={{ textAlign: "left", lineHeight: 3, fontFamily: "Spectral-Regular" }}>{representation}</li>)}
-        </ul>
-
-        <h5 style={{ fontFamily: "Spectral-Regular", paddingLeft: "10%", textAlign: "left", fontWeight: "bold" }}>Honors and Awards</h5>
-        <ul style={{paddingLeft: "15%"}}>
-            {honors.map(honors => <li style={{ textAlign: "left",  lineHeight: 3, fontFamily: "Spectral-Regular" }}>{honors}</li>)}
-        </ul>
-
-
-
-        <h5 style={{ fontFamily: "Spectral-Regular", textAlign: "left", paddingLeft: "10%", fontWeight: "bold" }}>Professional Affilifations</h5>
-        <ul style={{paddingLeft: "15%"}}>
-            {professionalAffilifations.map(professionalAffilifations => <li style={{  textAlign: "left", lineHeight: 3, fontFamily: "Spectral-Regular" }}>{professionalAffilifations}</li>)}
-        </ul>
-
-        <h5 style={{ fontFamily: "Spectral-Regular",paddingLeft: "10%", textAlign: "left", fontWeight: "bold" }}> Community Activity</h5>
-        <ul style={{paddingLeft: "15%"}}>
-            {communityActivities.map(communityActivities => <li style={{ textAlign: "left", lineHeight: 3, fontFamily: "Spectral-Regular" }}>{communityActivities}</li>)}
-        </ul>
-
-        <h5 style={{paddingLeft: "10%", fontFamily: "Spectral-Regular", textAlign: "left", fontWeight: "bold" }}>  Disclaimer</h5>
-        <p style={{ paddingLeft: "10%",fontFamily: "Spectral-Regular", textAlign: "left", lineHeight: 2 }}>{disclaimer.map(disclaimer => <><p style={{ paddingTop: 5 }}>{disclaimer}</p></>)}</p>
-       
+        <h5 style={{ fontFamily: "Spectral-Regular", textAlign: "left", fontWeight: "bold",paddingLeft: "10%" }}>Projects</h5>
+        <p style={{ fontFamily: "Spectral-Regular", textAlign: "left", lineHeight: 2,paddingLeft: "10%" }}>{projects.map(projects => <><p style={{ paddingTop: 5 }}>{projects}</p></>)}</p>
+   
 
     </Col>
-    <Col xs={12} sm={5}>
+    <Col xs={12} sm={3}>
         <Image
             height="auto"
             width="100%"

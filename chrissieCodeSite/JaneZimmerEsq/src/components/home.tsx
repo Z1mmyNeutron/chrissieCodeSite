@@ -6,19 +6,15 @@ import Image from 'react-bootstrap/Image'
 import { Container } from 'react-bootstrap';
 
 const content = [
-    "A trusted resource and caring advocate for over twenty years.",
-    "Ms. Fearn-Zimmer serves clients throughout Southern New Jersey as a trusted advisor who provides responsive, caring and high-quality legal representation and the answers you need.",
-    "",
-    "The simple values that Jane learned from her elders formed the foundation for her legal career and continue to influence her practice more than twenty years later.",
-
+ "Software engineer"
 ];
 
 const values = [
-    "Family is everything. Please tell me how I can help yours.",
-    "Listen to your client. They are people just like you.",
-    "Seek practical, strategic and personalized legal solutions.",
-    "Speak in plain English.",
-    "Always do your best."
+    "JavaScript",
+    "Java",
+    "Python",
+    "React.js",
+    "TypeScript"
 ]
 
 export default function HomePage() {
