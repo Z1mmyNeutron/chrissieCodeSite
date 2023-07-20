@@ -7,11 +7,7 @@ import { useState } from 'react';
 
 export default function NavBar() {
     const linkages: string[] = [
-        "Home",
-        "Firm-Overview",
-        "Attorney-Profiles",
-        "Practice-Areas",
-        "Contact",
+
     ];
 
     const [width, height] = useWindowSize();
@@ -36,12 +32,11 @@ export default function NavBar() {
         </ul>
         <div className="scale">
             <Row style={{ marginLeft: 0,  paddingTop: width < 576 ? 0 : 225, width: "100%" }}>
-                <Col xs={6} sm={2} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Practice-Areas/Elder-Law"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Elder Law</p></a></Col>
-                <Col xs={6} sm={2} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Practice-Areas/Estate-Administration"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Estate Planning</p></a></Col>
-                <Col xs={6} sm={2} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Practice-Areas/Special-Needs-Planning"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Special Needs Planning</p></a></Col>
-                <Col xs={6} sm={2} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Practice-Areas/Estate-Administration"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Estate Administration</p></a></Col>
-                <Col xs={6} sm={2} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Practice-Areas/Special-Needs-Planning"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Mental Health Law</p></a></Col>
-                <Col xs={6} sm={2} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Practice-Areas/Guardianship-&-Estate-Litigation"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Guardianships</p></a></Col>
+                <Col xs={6} sm={3} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Home</p></a></Col>
+                <Col xs={6} sm={3} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Attorney-Profiles"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Projects</p></a></Col>
+                <Col xs={6} sm={3} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Contact"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Contact Me</p></a></Col>
+                <Col xs={6} sm={3} className="hoverTransition" style={buttonCSS} onClick={() => { console.log("click") }}><a style={{ textDecoration: "none", color: "white", }} href="/Firm-Overview"><p style={{ textAlign: "center", paddingTop: 20, fontFamily: "Roboto-Regular", fontSize: 16 }}>Gallery</p></a></Col>
+         
             </Row>
         </div>
     </Col>

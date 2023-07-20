@@ -19,7 +19,7 @@ export function ContactPage() {
         </Col>
         <Col sm={4}>
             <Container>
-                <p style={{ fontFamily: "Roboto-Regular", fontWeight: "bold", color: "orange", textAlign: "center", fontSize:20 }}>Contact Information</p>
+                <p style={{ fontFamily: "Roboto-Regular", fontWeight: "bold", color: "purple", textAlign: "center", fontSize:20 }}>Contact Information</p>
                 <ContactInformation textAlign="center"/>
             </Container>
         </Col>

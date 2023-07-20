@@ -24,7 +24,7 @@ code {
 }
 
 .bannerBackgroundImage {
-    background-image: url(./media/images/elder-law-backdrop.jpg);
+    background-image: url(./media/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -32,14 +32,14 @@ code {
 
 
 .scale {
-    background-image: url(./media/images/scale.jpg);
+    background-image: url(./media/images/background.jpg);
     background-size: cover;
     opacity: 1;
     height: 300px;
 }
 
 .janePortratImage {
-    background-image: url(./media/images/jane-portrait.jpg);
+    background-image: url(./media/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -52,7 +52,7 @@ code {
 }
 .topLink {
     text-decoration: none;
-    color: orange;
+    color: rgb(76, 12, 118);
     transition-duration: 1s;
 }
 

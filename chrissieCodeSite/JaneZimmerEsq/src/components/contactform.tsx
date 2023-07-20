@@ -4,8 +4,9 @@ import { address, phoneNumbers } from "./data";
 
 export function ContactInformation(props: { textAlign: "left" | "right" | "center"}) {
     return <>
-        <p style={{ textAlign: props.textAlign, fontFamily: "Roboto-Regular" }}><span style={{ fontWeight: "bold" }}> Law Offices of Jane F.<br />
-            Zimmer</span><br /><br />
+        <p style={{ textAlign: props.textAlign, fontFamily: "Roboto-Regular" }}><span style={{ fontWeight: "bold" }}> Please fill out the form to contact!<br />
+            </span><br /><br />
+            <span>Christina Zimmer</span><br/>
             {address.map(add => <><span>{add}</span><br /></>)}
             <br />
             {phoneNumbers.map(number => <><span>{number}</span><br /></>)}
@@ -14,7 +15,7 @@ export function ContactInformation(props: { textAlign: "left" | "right" | "cente
 }
 
 export default function ContactForm(props: { includeContactInfo: boolean }) {
-    let color = "orange";
+    let color = "purple";
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
